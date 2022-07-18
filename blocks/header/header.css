@@ -1,0 +1,43 @@
+
+.header {
+    border-bottom: 1px solid #fefe5c;
+    background-color: black;
+
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0  30px;
+    height: 70px;
+    font-size: 24px;
+}
+
+.menu {
+ display: flex;
+
+}
+
+.header__par {
+    margin-left: 30px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.header__par:hover {
+    opacity: 1;
+    transition : ease-in-out 0.3s;
+}
+
+.header__contact {
+    border : 1px solid #909044;
+    padding: 10px;
+    color: #fefe5c;
+
+    cursor: pointer;
+}
+
+.header__contact:hover {
+    border : 1px solid #fbfb01;
+    transition : ease-in-out 0.3s;
+}
