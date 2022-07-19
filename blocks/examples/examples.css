@@ -1,0 +1,39 @@
+.slider {
+    border: 1px solid red;
+    max-width: 70%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slider-line {
+    display: flex;
+    transition: all ease 1s;
+}
+
+.slider__img {
+    width:100%;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.examples {
+    margin-top: 50px;
+    border: 1px solid red;
+}
+
+.examples__btn-wrap {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.examples__btn{
+    margin-left:10px;
+}
+
+.examples__title {
+    font-size: 54px;
+    text-align: center;
+}

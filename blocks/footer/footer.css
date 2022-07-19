@@ -1,0 +1,11 @@
+.footer {
+    border: 1px solid blue;
+    margin-top: 50px;
+    height: 20vh;
+    text-align: center;
+
+}
+.footer__text {
+    text-align: center;
+    margin-top: 7vh;
+}

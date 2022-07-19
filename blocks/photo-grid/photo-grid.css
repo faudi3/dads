@@ -2,21 +2,33 @@
     display: grid;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows:repeat(4,1fr);
-    opacity: 0.4;
+
+
+    background: none;
 }
 
 .photo-grid__item {
     object-fit:cover;
     width: 100%;
+    opacity: 0.45;
 }
 
 .photo-grid {
 position: relative;
+
 }
 
 .photo-grid__text2 {
     color:yellow;
     font-weight: bolder;
+    background: none;
+
+}
+
+.photo-grid__text {
+    font-weight: bolder;
+    background: none;
+    opacity: 0.8;
 }
 
 .photo-grid__text-wrap {
@@ -27,6 +39,9 @@ position: relative;
     text-align: center;
     font-size: 90px;
     max-width:1000px;
+    background: none;
+    z-index: 2;
+
 }
 
 .photo-grid__btn {
@@ -36,6 +51,7 @@ position: relative;
     border: 1px solid white;
     padding: 10px;
     font-size: 22px;
-    cursor: pointer;
+    cursor: pointer ;
+
 }
 
