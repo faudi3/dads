@@ -1,22 +1,8 @@
-.slider {
 
-    max-width: 80%;
-    margin: 20px auto;
-    overflow: hidden;
-}
 
-.slider-line {
-    display: flex;
-    transition: all ease 1s;
-}
 
-.slider__img {
-    width:100%;
-}
 
-.button {
-    cursor: pointer;
-}
+
 
 .examples {
     margin-top: 50px;
@@ -26,18 +12,9 @@
     margin: 50px auto;
 }
 
-.examples__btn-wrap {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    background: none;
-}
 
-.examples__btn{
-    margin-left:10px;
-    cursor: pointer;
-    border: 1px solid white;
-}
+
+
 
 .examples__title {
     font-size: 54px;
@@ -47,6 +24,16 @@
 
 .examples__proj-title {
     text-align: center;
+}
+
+.examples__block {
+    border: 1px solid green;
+    margin-top: 20px;
+}
+
+.activeBL {
+    display: flex;
+    flex-direction: column;
 }
 
 .examples__proj-subtitle {
@@ -59,6 +46,81 @@
     padding-bottom:20px;
 }
 
-.examples__slider-block {
-   border: 1px solid white;
+
+.flex-wrapper {
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.slider-wrapper {
+    max-width: 900px;
+    width: 100%;
+    height:490px;
+    position: relative;
+
+}
+
+.btn-prev, .btn-next {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    background-color: gray;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity .2s ease-in-out;
+}
+
+.btn-prev:hover, .btn-next:hover {
+    opacity: 0.6;
+}
+.btn-next {
+    left:auto;
+    right: 0;
+}
+.slide {
+    width: 100%;
+    height: 100%;
+    display:none;
+
+}
+
+
+.slide.active {
+    display:block;
+
+}
+
+.examples__img {
+    width: 100%;
+    height: 100%;
+}
+
+.dots-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.dot.active {
+    background-color: black;
+
+}
+
+span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: gray;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+span:last-child {
+    margin-right: 0;
 }

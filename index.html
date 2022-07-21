@@ -20,11 +20,11 @@
      <div class="header__wrapper">
      <img class="header__logo" src="./img/logo.png" alt="logo" width="48" height="48">
      <div class="menu">
-         <p class="header__par">Работы</p>
-         <p class="header__par">Видео</p>
-         <p class="header__par">Цены</p>
-         <p class="header__par">Обо мне</p>
-         <p class="header__par">Контакты</p>
+         <a class="header__par" href="#idexamples">Работы</a>
+         <a class="header__par" href="#examples">Видео</a>
+         <a class="header__par" href="#examples">Цены</a>
+         <a class="header__par" href="#idabout">Обо мне</a>
+         <a class="header__par" href="#idcontacts">Контакты</a>
      </div>
      <div class="header__contact">Связаться</div>
      </div>
@@ -60,30 +60,79 @@
         <img class="photo-grid__item" src="./img/chalet1.jpg" alt="шалет">
         </div>
     </section>
-    <section class="examples animation wow fadeIn">
+    <section class="examples animation wow fadeIn" id="idexamples">
         <h2 class="examples__title">Работы</h2>
-        <div class="examples__slider-block">
-      <div class="slider">
-          <div class="slider-line">
-            <img class="slider__img" src="./img/chalet1.jpg" alt="">
-            <img class="slider__img"  src="./img/chalet2.jpg" alt="">
-            <img class="slider__img" src="./img/chalet3.jpg" alt="">
-            <img class="slider__img" src="./img/chalet4.jpg" alt="">
-          </div>
-      </div>
-        <div class="examples__btn-wrap">
-        <div class="examples__btn slider-prev">prev</div>
-        <div class="examples__btn slider-next">next</div>
+        <div class="examples__block">
+        <div class="flex-wrapper">
+            <div class="slider-wrapper">
+                <div class="slide active">
+                    <img class="examples__img" src="./img/chalet1.jpg" />
+                </div>
+                <div class="slide">
+                    <img class="examples__img" src="./img/chalet2.jpg" />
+                </div>
+                <div class="slide">
+                    <img class="examples__img" src="./img/chalet3.jpg" />
+                </div>
+                <div class="slide">
+                    <img class="examples__img" src="./img/chalet4.jpg" />
+                </div>
+                <div class="btn-prev"></div>
+                <div class="btn-next"></div>
+            </div>
         </div>
-        <h2 class="examples__proj-title">PROJECT CHALET 382/ ПРОЕКТ ДОМА ШАЛЕ</h2>
-        <h3 class="examples__proj-subtitle">ПРИМЕР СОЧЕТАНИЯ КАМНЯ В СТЕНАХ 1-ЭТАЖА (ГОСТИНАЯ ЗОНА),
-            И 2-ГО ЭТАЖА, ВЫПОЛНЕННОГО В ДЕРЕВЯННЫХ КОНСТРУКЦИЯХ, ГДЕ РАСПОЛОЖЕНА СПАЛЬНАЯ ЗОНА.</h3>
+        <div class="dots-wrapper">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <h3 class="examples__proj-title">PROJECT CHALET 382/ ПРОЕКТ ДОМА ШАЛЕ</h3>
+        <h4 class="examples__proj-subtitle">ПРИМЕР СОЧЕТАНИЯ КАМНЯ В СТЕНАХ 1-ЭТАЖА (ГОСТИНАЯ ЗОНА),
+            И 2-ГО ЭТАЖА, ВЫПОЛНЕННОГО В ДЕРЕВЯННЫХ КОНСТРУКЦИЯХ, ГДЕ РАСПОЛОЖЕНА СПАЛЬНАЯ ЗОНА.</h4>
         <p class="examples__text">Сложносоставная структура фасадов, основанная на сочетании традиционных материалов:
-            грубой фактуры камня, белой штукатурки и деревянного сруба,
-            открытые конструктивные элементы кровли, -все вместе создает неповторимый колорит и романтику альпийского шале.</p>
+            грубой фактуры камня, белой штукатурки и деревянного сруба, открытые конструктивные элементы кровли,
+            -все вместе создает неповторимый колорит и романтику альпийского шале.</p>
         </div>
+        <div class="examples__block">
+            <div class="flex-wrapper">
+                <div class="slider-wrapper">
+                    <div class="slide active">
+                        <img class="examples__img" src="./img/volga1.jpg" />
+                    </div>
+                    <div class="slide">
+                        <img class="examples__img" src="./img/volga2.jpg" />
+                    </div>
+                    <div class="slide">
+                        <img class="examples__img" src="./img/volga3.jpg" />
+                    </div>
+                    <div class="slide">
+                        <img class="examples__img" src="./img/volga4.jpg" />
+                    </div>
+                    <div class="slide">
+                        <img class="examples__img" src="./img/volga5.jpg" />
+                    </div>
+                    <div class="btn-prev"></div>
+                    <div class="btn-next"></div>
+                </div>
+            </div>
+            <div class="dots-wrapper">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <h3 class="examples__proj-title">VOLGA RESIDENCE PROJECT / ПРОЕКТ РЕЗИДЕНЦИИ НА ВОЛГЕ</h3>
+            <h4 class="examples__proj-subtitle">ДОМ ИЗ ПРОФИЛИРОВАННОГО КЕДРОВОГО БРУСА В СТИЛЕ СОВРЕМЕННОГО КАНТРИ</h4>
+            <p class="examples__text">Традиционный, но одновременно строгий и торжественный характер данному строению придает
+                симметричная структура, состоящая из 3-х основных, слегка повернутых друг к другу 2-этажных объемов с пластичными
+                фигурными торцами деревянных стен, соединенных между собой 1-этажными галереями, и акцентированный портик центрального
+                входа с счетверенным брусовыми колоннами с высоким каменным цоколем.</p>
+        </div>
+
     </section>
-    <section class="contacts animation wow fadeIn">
+    <section class="contacts animation wow fadeIn" id="idcontacts">
         <h2 class="contacts__heading">Контакты</h2>
         <div class="contacts__wrap">
             <div class="contacts__element">
@@ -107,7 +156,7 @@
             </div>
         </div>
     </section>
-    <section class="about animation wow fadeIn">
+    <section class="about animation wow fadeIn" id="idabout">
         <h2 class="about__heading">Обо Мне</h2>
         <div class="about__wrap">
         <p class="about__par"> Архитектор</p>
@@ -123,7 +172,7 @@
  <footer class="footer wow fadeIn">
      <h2 class="footer__text">© Nagorny Fedor Architect — 2022. All rights reserved.</h2>
  </footer>
-
-<script src="./js/slider.js"></script>
+ <script src="./js/bigSlider.js"></script>
+ <script src="./js/scroll.js"></script>
 </body>
 </html>
