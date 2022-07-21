@@ -1,0 +1,25 @@
+.about {
+    background-color: #313131;
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.about__heading {
+    font-size: 54px;
+}
+
+.about__wrap {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: orange;
+}
+.about__par {
+    margin-left: 10px;
+    width: 20%;
+    font-size: 22px;
+    font-weight: bold;
+}

@@ -1,0 +1,49 @@
+.contacts {
+    width: 90%;
+    background-color: #313131;
+    text-align: center;
+    margin: 50px auto;
+
+}
+
+.contacts__heading {
+    font-size: 54px;
+}
+
+.contacts__svg {
+    height: 35px;
+    width: 35px;
+
+}
+
+.contacts__svg1 {
+    height: 35px;
+    width: 35px;
+
+}
+
+.contacts__wrap {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px auto
+}
+
+.contacts__orange {
+    background-color: orange;
+}
+
+.contacts__post {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+
+}
+
+.contacts__name {
+    margin-left: 15px;
+}

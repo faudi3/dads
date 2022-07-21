@@ -18,9 +18,10 @@
 <body>
  <Header class="header">
      <div class="header__wrapper">
-     <img src="./img/logo.png" alt="logo" width="48" height="48">
+     <img class="header__logo" src="./img/logo.png" alt="logo" width="48" height="48">
      <div class="menu">
          <p class="header__par">Работы</p>
+         <p class="header__par">Видео</p>
          <p class="header__par">Цены</p>
          <p class="header__par">Обо мне</p>
          <p class="header__par">Контакты</p>
@@ -59,18 +60,63 @@
         <img class="photo-grid__item" src="./img/chalet1.jpg" alt="шалет">
         </div>
     </section>
-    <section class="examples wow fadeIn">
+    <section class="examples animation wow fadeIn">
         <h2 class="examples__title">Работы</h2>
+        <div class="examples__slider-block">
       <div class="slider">
           <div class="slider-line">
-            <img class="slider__img" src="./img/kamchatka1.jpg" alt="">
-            <img class="slider__img" src="./img/kamchatka2.jpg" alt="">
-            <img class="slider__img" src="./img/kamchatka3.jpg" alt="">
+            <img class="slider__img" src="./img/chalet1.jpg" alt="">
+            <img class="slider__img"  src="./img/chalet2.jpg" alt="">
+            <img class="slider__img" src="./img/chalet3.jpg" alt="">
+            <img class="slider__img" src="./img/chalet4.jpg" alt="">
           </div>
       </div>
         <div class="examples__btn-wrap">
-        <button class="examples__btn slider-prev">prev</button>
-        <button class="examples__btn slider-next">next</button>
+        <div class="examples__btn slider-prev">prev</div>
+        <div class="examples__btn slider-next">next</div>
+        </div>
+        <h2 class="examples__proj-title">PROJECT CHALET 382/ ПРОЕКТ ДОМА ШАЛЕ</h2>
+        <h3 class="examples__proj-subtitle">ПРИМЕР СОЧЕТАНИЯ КАМНЯ В СТЕНАХ 1-ЭТАЖА (ГОСТИНАЯ ЗОНА),
+            И 2-ГО ЭТАЖА, ВЫПОЛНЕННОГО В ДЕРЕВЯННЫХ КОНСТРУКЦИЯХ, ГДЕ РАСПОЛОЖЕНА СПАЛЬНАЯ ЗОНА.</h3>
+        <p class="examples__text">Сложносоставная структура фасадов, основанная на сочетании традиционных материалов:
+            грубой фактуры камня, белой штукатурки и деревянного сруба,
+            открытые конструктивные элементы кровли, -все вместе создает неповторимый колорит и романтику альпийского шале.</p>
+        </div>
+    </section>
+    <section class="contacts animation wow fadeIn">
+        <h2 class="contacts__heading">Контакты</h2>
+        <div class="contacts__wrap">
+            <div class="contacts__element">
+                <img class="contacts__svg1" src="./img/phone.svg" alt="">
+                <p>+7-916-156-02-24 </p>
+            </div>
+            <div class="contacts__element">
+                <img class="contacts__svg" src="./img/email.svg" alt="">
+                <p>nagorfedor@yandex.ru </p>
+            </div>
+            <div class="contacts__element">
+                <img class="contacts__svg" src="./img/inst4.svg" alt="">
+                <p>@nagorny_architect </p>
+            </div>
+        </div>
+        <div class="contacts__orange">
+            <div class="contacts__post">
+                <img src="./img/logo.png" alt="">
+                <p class="contacts__name">Архитектор Федор Нагорный</p>
+
+            </div>
+        </div>
+    </section>
+    <section class="about animation wow fadeIn">
+        <h2 class="about__heading">Обо Мне</h2>
+        <div class="about__wrap">
+        <p class="about__par"> Архитектор</p>
+        <p class="about__par"> Свыше 1000 выполненных проектов и построенных объектов</p>
+
+        <p class="about__par"> Выпускник МАрхИ</p>
+        <p class="about__par">Опыт работы более 20 лет.</p>
+
+        <p class="about__par">Предоставляю услуги по проектированию жилых объектов, бань, малых архитектурных форм и пр.</p>
         </div>
     </section>
 </Main>

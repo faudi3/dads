@@ -1,6 +1,6 @@
 .slider {
-    border: 1px solid red;
-    max-width: 70%;
+
+    max-width: 80%;
     margin: 20px auto;
     overflow: hidden;
 }
@@ -20,20 +20,45 @@
 
 .examples {
     margin-top: 50px;
-    border: 1px solid red;
+
+    background-color: #313131;
+    width: 90%;
+    margin: 50px auto;
 }
 
 .examples__btn-wrap {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    background: none;
 }
 
 .examples__btn{
     margin-left:10px;
+    cursor: pointer;
+    border: 1px solid white;
 }
 
 .examples__title {
     font-size: 54px;
     text-align: center;
+    background: none;
+}
+
+.examples__proj-title {
+    text-align: center;
+}
+
+.examples__proj-subtitle {
+    text-align: center;
+}
+
+.examples__text {
+    text-align: center;
+    margin: 20px 20px;
+    padding-bottom:20px;
+}
+
+.examples__slider-block {
+   border: 1px solid white;
 }

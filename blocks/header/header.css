@@ -1,6 +1,6 @@
 
 .header {
-    border-bottom: 1px solid #fefe5c;
+
     background-color: black;
 
 }
@@ -27,6 +27,7 @@
 .header__par:hover {
     opacity: 1;
     transition : ease-in-out 0.3s;
+    border-bottom: 1px solid white
 }
 
 .header__contact {
@@ -40,4 +41,8 @@
 .header__contact:hover {
     border : 1px solid #fbfb01;
     transition : ease-in-out 0.3s;
+}
+
+.header__logo {
+    cursor: pointer;
 }
