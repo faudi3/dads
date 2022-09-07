@@ -1,25 +1,23 @@
-@import url('./blocks/header/header.css');
-@import url('./blocks/photo-grid/photo-grid.css');
-@import url('./blocks/examples/examples.css');
-@import url('./blocks/footer/footer.css');
-@import url('./blocks/contacts/contacts.css');
-@import url('./blocks/animation/animation.css');
-@import url('./blocks/about/about.css');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;900&display=swap');
-* {
-    font-family: 'Nunito', sans-serif;
-    margin:0;
-    padding: 0;
-    color:white;
+@import url("./blocks/header/header.css");
+@import url("./blocks/photo-grid/photo-grid.css");
+@import url("./blocks/examples/examples.css");
+@import url("./blocks/footer/footer.css");
+@import url("./blocks/contacts/contacts.css");
+@import url("./blocks/animation/animation.css");
+@import url("./blocks/about/about.css");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;900&display=swap");
 
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
 }
 
 body {
-    background-color: black;
+  background-image: linear-gradient(to left, rgb(17, 17, 18), rgb(3, 1, 31));
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-
-
