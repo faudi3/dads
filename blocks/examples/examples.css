@@ -1,8 +1,5 @@
 .examples {
   margin-top: 50px;
-
-  width: 90%;
-  margin: 50px auto;
 }
 
 .examples__title {
@@ -13,13 +10,14 @@
 
 .examples__proj-title {
   text-align: center;
-  margin-top: 10px;
+  padding-top: 10px;
+  font-size: 32px;
 }
 
 .examples__block {
-  margin-top: 20px;
   background-color: #313131;
-  border-radius: 15px;
+}
+.examples__img {
 }
 
 .activeBL {
@@ -29,6 +27,7 @@
 
 .examples__proj-subtitle {
   text-align: center;
+  margin-top: 10px;
 }
 
 .examples__text {
@@ -46,9 +45,8 @@
 .slider-wrapper {
   max-width: 1000px;
   width: 100%;
-  max-height: 490px;
+
   position: relative;
-  margin-top: 20px;
 }
 
 .btn-prev,
@@ -57,7 +55,7 @@
   left: 0;
   top: 0;
   height: 100%;
-  width: 50px;
+  width: 40px;
   background-color: gray;
   opacity: 0.4;
   cursor: pointer;

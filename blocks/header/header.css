@@ -1,5 +1,6 @@
 .header {
   background-color: black;
+  box-sizing: border-box;
 }
 
 .header__wrapper {
@@ -9,6 +10,7 @@
   margin: 0 30px;
   height: 70px;
   font-size: 24px;
+  box-sizing: border-box;
 }
 
 .menu {
@@ -24,6 +26,7 @@
   opacity: 1;
   transition: ease-in-out 0.3s;
   border-bottom: 1px solid white;
+  border-top: 1px solid white;
 }
 
 .header__contact {
@@ -35,7 +38,7 @@
 }
 
 .header__contact:hover {
-  border: 1px solid #fbfb01;
+  border: 2px solid #fbfb01;
   transition: ease-in-out 0.3s;
 }
 
