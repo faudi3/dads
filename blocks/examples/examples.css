@@ -15,9 +15,7 @@
 }
 
 .examples__block {
-  background-color: #313131;
-}
-.examples__img {
+  background-color: black;
 }
 
 .activeBL {
@@ -34,6 +32,8 @@
   text-align: center;
   margin: 20px 20px;
   padding-bottom: 20px;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .flex-wrapper {
@@ -72,7 +72,7 @@
 }
 .slide {
   width: 100%;
-  height: 100%;
+  height: 75vh;
   display: none;
 }
 
@@ -82,7 +82,7 @@
 
 .examples__img {
   width: 100%;
-  height: 100%;
+  height: inherit;
 }
 
 .dots-wrapper {
@@ -92,7 +92,7 @@
 }
 
 .dot.active {
-  background-color: black;
+  background-color: white;
 }
 
 span {
