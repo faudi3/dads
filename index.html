@@ -14,10 +14,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
     />
 
-    <script src="./js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
     <title>Архитектор Федор Нагорный</title>
   </head>
   <body>
@@ -41,93 +37,16 @@
       </div>
     </header>
     <main class="main">
-      <section class="photo-grid">
-        <div class="photo-grid__text-wrap">
-          <p class="photo-grid__text wow fadeInLeft">Сайт Архитектора</p>
-          <p class="photo-grid__text2 wow fadeInRight">Федора Нагорного</p>
-          <p class="photo-grid__btn wow fadeIn">Примеры работ ></p>
-        </div>
-
-        <div class="photo-grid__wrapper">
-          <img class="photo-grid__item" src="./img/chalet1.jpg" alt="шалет" />
-          <img class="photo-grid__item" src="./img/chalet2.jpg" alt="шалет" />
-          <img class="photo-grid__item" src="./img/chalet3.jpg" alt="шалет" />
-          <img
-            class="photo-grid__item"
-            src="./img/guest-house-1-scaled.jpg"
-            alt="шалет"
-          />
-          <img
-            class="photo-grid__item"
-            src="./img/guest-house-2-scaled.jpg"
-            alt="шалет"
-          />
-          <img
-            class="photo-grid__item"
-            src="./img/guest-house-3-scaled.jpg"
-            alt="шалет"
-          />
-          <img
-            class="photo-grid__item"
-            src="./img/guest-house-4-scaled.jpg"
-            alt="шалет"
-          />
-          <img
-            class="photo-grid__item"
-            src="./img/kamchatka1.jpg"
-            alt="шалет"
-          />
-          <img
-            class="photo-grid__item"
-            src="./img/kamchatka2.jpg"
-            alt="шалет"
-          />
-          <img
-            class="photo-grid__item"
-            src="./img/kamchatka3.jpg"
-            alt="шалет"
-          />
-          <img
-            class="photo-grid__item"
-            src="./img/kamchatka4.jpg"
-            alt="шалет"
-          />
-          <img class="photo-grid__item" src="./img/chalet1.jpg" alt="шалет" />
-          <img
-            class="photo-grid__item"
-            src="./img/kamchatka2.jpg"
-            alt="шалет"
-          />
-          <img
-            class="photo-grid__item"
-            src="./img/kamchatka3.jpg"
-            alt="шалет"
-          />
-          <img
-            class="photo-grid__item"
-            src="./img/kamchatka4.jpg"
-            alt="шалет"
-          />
-          <img class="photo-grid__item" src="./img/chalet1.jpg" alt="шалет" />
-          <img
-            class="photo-grid__item"
-            src="./img/kamchatka2.jpg"
-            alt="шалет"
-          />
-          <img
-            class="photo-grid__item"
-            src="./img/kamchatka3.jpg"
-            alt="шалет"
-          />
-          <img
-            class="photo-grid__item"
-            src="./img/kamchatka4.jpg"
-            alt="шалет"
-          />
-          <img class="photo-grid__item" src="./img/chalet1.jpg" alt="шалет" />
+      <section class="photo-grid section">
+        <div class="photo-grid__wrap">
+          <img class="photo-grid__img" src="./img/backgr.jpg" />
+          <div class="photo-grid__text">
+            <h2 class="photo-grid__h2">Сайт Архитектора</h2>
+            <h1 class="photo-grid__h1">Федора Нагорного</h1>
+          </div>
         </div>
       </section>
-      <section class="examples wow fadeIn" id="idexamples">
+      <section class="examples section" id="idexamples">
         <h2 class="examples__title wow fadeInRight">Работы</h2>
         <div class="container">
           <div class="sidebar">
@@ -232,7 +151,10 @@
           </div>
         </div>
       </section>
-      <section class="contacts animation wow fadeInRight" id="idcontacts">
+      <section
+        class="contacts section animation wow fadeInRight"
+        id="idcontacts"
+      >
         <h2 class="contacts__heading">Контакты</h2>
         <div class="contacts__wrap">
           <div class="contacts__element">
@@ -255,7 +177,7 @@
           </div>
         </div>
       </section>
-      <section class="about animation wow fadeInLeft" id="idabout">
+      <section class="about section animation" id="idabout">
         <h2 class="about__heading">Обо Мне</h2>
         <div class="about__wrap">
           <p class="about__par">Архитектор</p>
@@ -273,11 +195,12 @@
         </div>
       </section>
     </main>
-    <footer class="footer wow fadeIn">
+    <footer class="footer">
       <h2 class="footer__text">
         © Nagorny Fedor Architect — 2022. All rights reserved.
       </h2>
     </footer>
+
     <script src="./js/bigSlider.js"></script>
     <script src="./js/examplesscript.js"></script>
   </body>

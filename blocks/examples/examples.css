@@ -1,5 +1,6 @@
 .examples {
   margin-top: 50px;
+  border: 1px solid red;
 }
 
 .examples__title {

@@ -1,6 +1,6 @@
 (function () {
   let SliderLists = document.querySelectorAll(".examples__block");
-  console.log(SliderLists);
+
   SliderLists.forEach((item, ind) => {
     const prev = item.querySelector(".btn-prev");
     const next = item.querySelector(".btn-next");
