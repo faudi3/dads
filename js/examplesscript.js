@@ -5,16 +5,27 @@ const mainSlide = document.querySelector(".main-slide");
 const container = document.querySelector(".container");
 const slidesCount = mainSlide.querySelectorAll(".examples__block").length;
 
+let player = document.querySelector(".vid");
+
 sidebar.style.top = `-${(slidesCount - 1) * 100}vh`;
 
 let activeSlideIdx = 0;
 
 upBtn.addEventListener("click", () => {
   changeSlide("up");
+
+  player.contentWindow.postMessage(
+    '{"event":"command","func":"pauseVideo","args":""}',
+    "*"
+  );
 });
 
 downBtn.addEventListener("click", () => {
   changeSlide("down");
+  player.contentWindow.postMessage(
+    '{"event":"command","func":"pauseVideo","args":""}',
+    "*"
+  );
 });
 
 function changeSlide(direction) {

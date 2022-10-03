@@ -1,6 +1,5 @@
 /*#fbe0d7*/
 .photo-grid {
-  border: 1px solid red;
 }
 .photo-grid__wrap {
   position: relative;
@@ -8,14 +7,16 @@
 .photo-grid__text {
   position: absolute;
   top: 25%;
-  left: 25%;
+  left: 20%;
+  text-align: center;
+  width: 70%;
 }
 .photo-grid__img {
   width: 100%;
   opacity: 0.45;
 }
 
-.photo-grid__h1,
+/*.photo-grid__h1,*/
 .photo-grid__h2 {
   font-size: 72px;
   font-family: "Montserrat", sans-serif;
