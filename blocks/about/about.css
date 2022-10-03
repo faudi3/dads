@@ -8,14 +8,21 @@
 .about__container {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .about__wrap {
   background: #1d1d1d;
+  transition: all 0.5s ease-in-out;
+  border-bottom: 2px solid #4b3f3f;
+
   margin-left: 20px;
   width: 45%;
   display: flex;
-  padding: 10px;
+  padding: 5px;
+}
+.about__wrap:hover {
+  background: #282828;
 }
 .about__title {
   font-size: 42px;
@@ -26,9 +33,14 @@
 }
 .about__text {
   color: white;
+  transition: all 0.5s ease-in-out;
   text-align: center;
-  font-size: 18px;
-  padding-left: 5px;
+  font-size: 20px;
+  padding: 5px;
+  opacity: 0.7;
+}
+.about__text:hover {
+  opacity: 1;
 }
 .about__cont {
   display: flex;
@@ -36,8 +48,40 @@
   align-items: center;
 }
 
-.about__wrap-prices {
-  color: black;
-  text-align: center;
-  font-size: 30px;
+.container1 {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+  flex-direction: column;
+}
+
+.slide1 {
+  height: 80vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 500ms ease-in;
+  position: relative;
+}
+.slide1 h3 {
+  position: absolute;
+  font-size: 18px;
+  bottom: 10px;
+  left: 20px;
+  margin: 0;
+  font-weight: 500;
+  opacity: 0;
+}
+
+.slide1.active1 {
+  flex: 10;
+}
+.slide1.active1 h3 {
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in 0.4s;
 }

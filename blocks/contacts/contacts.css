@@ -19,6 +19,7 @@
 }
 .contact__element:hover {
   background: #282828;
+  cursor: pointer;
 }
 .contact__img {
   padding: 30px;
