@@ -13,7 +13,6 @@ let activeSlideIdx = 0;
 
 upBtn.addEventListener("click", () => {
   changeSlide("up");
-
   player.contentWindow.postMessage(
     '{"event":"command","func":"pauseVideo","args":""}',
     "*"
@@ -44,3 +43,25 @@ function changeSlide(direction) {
   mainSlide.style.transform = `translateY(-${activeSlideIdx * height}px)`;
   sidebar.style.transform = `translateY(${activeSlideIdx * height}px)`;
 }
+
+let SliderLists = document.querySelectorAll(".examples__block");
+
+SliderLists.forEach((item, ind) => {
+  let player = item.querySelector(".vid");
+
+  upBtn.addEventListener("click", () => {
+    changeSlide("up");
+    player.contentWindow.postMessage(
+      '{"event":"command","func":"pauseVideo","args":""}',
+      "*"
+    );
+  });
+
+  downBtn.addEventListener("click", () => {
+    changeSlide("down");
+    player.contentWindow.postMessage(
+      '{"event":"command","func":"pauseVideo","args":""}',
+      "*"
+    );
+  });
+});

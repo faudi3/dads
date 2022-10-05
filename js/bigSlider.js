@@ -6,8 +6,8 @@
     const next = item.querySelector(".btn-next");
     const slides = item.querySelectorAll(".slide");
     const dots = item.querySelectorAll(".dot");
-    let player = document.querySelector(".vid");
-
+    let player = item.querySelector(".vid");
+    console.log(player);
     let index = 0;
     const activeSlide = (n) => {
       for (slide of slides) {
@@ -26,10 +26,12 @@
       activeSlide(ind);
     };
     const nextSlide = () => {
-      player.contentWindow.postMessage(
-        '{"event":"command","func":"pauseVideo","args":""}',
-        "*"
-      );
+      if (player) {
+        player.contentWindow.postMessage(
+          '{"event":"command","func":"pauseVideo","args":""}',
+          "*"
+        );
+      }
       if (index == slides.length - 1) {
         index = 0;
         prepareCurrentSlide(index);
@@ -40,10 +42,12 @@
     };
 
     const prevSlide = () => {
-      player.contentWindow.postMessage(
-        '{"event":"command","func":"pauseVideo","args":""}',
-        "*"
-      );
+      if (player) {
+        player.contentWindow.postMessage(
+          '{"event":"command","func":"pauseVideo","args":""}',
+          "*"
+        );
+      }
       if (index == 0) {
         index = slides.length - 1;
         prepareCurrentSlide(index);
