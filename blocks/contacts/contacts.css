@@ -1,7 +1,8 @@
 .contacts__wrapper {
   display: flex;
-  justify-content: space-around;
-  margin: 20px auto;
+  justify-content: space-between;
+  margin: 20px 0;
+  flex: 1;
 }
 .contacts {
   margin: 30px 20px;
@@ -13,9 +14,12 @@
 
 .contact__element {
   background: #1d1d1d;
-  width: 30%;
+
   transition: all 0.5s ease-in-out;
   border-bottom: 2px solid #4b3f3f;
+}
+.contact__element:last-child {
+  margin-right: 0;
 }
 .contact__element:hover {
   background: #282828;

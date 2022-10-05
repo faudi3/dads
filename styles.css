@@ -2,13 +2,15 @@
 @import url("./blocks/photo-grid/photo-grid.css");
 @import url("./blocks/examples/examples.css");
 @import url("./blocks/examples/vertSlider.css");
-
+@import url("../blocks/prices/prices.css");
 @import url("./blocks/footer/footer.css");
 @import url("./blocks/contacts/contacts.css");
 @import url("./blocks/animation/animation.css");
 @import url("./blocks/about/about.css");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BenchNine&display=swap");
 * {
   font-family: "Nunito", sans-serif;
   margin: 0;
@@ -21,6 +23,7 @@ html {
 }
 body {
   background: black;
+  box-sizing: border-box;
 }
 
 a {
