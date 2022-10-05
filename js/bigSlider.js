@@ -7,7 +7,7 @@
     const slides = item.querySelectorAll(".slide");
     const dots = item.querySelectorAll(".dot");
     let player = item.querySelector(".vid");
-    console.log(player);
+
     let index = 0;
     const activeSlide = (n) => {
       for (slide of slides) {
@@ -58,10 +58,12 @@
     };
     dots.forEach((item, indexDot) => {
       item.addEventListener("click", () => {
-        player.contentWindow.postMessage(
-          '{"event":"command","func":"pauseVideo","args":""}',
-          "*"
-        );
+        if (player) {
+          player.contentWindow.postMessage(
+            '{"event":"command","func":"pauseVideo","args":""}',
+            "*"
+          );
+        }
         index = indexDot;
         prepareCurrentSlide(index);
       });
