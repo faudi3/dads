@@ -7,6 +7,7 @@
   transition: all 0.5s ease-in-out;
   width: 49%;
   text-align: center;
+  border-bottom: 2px solid #4b3f3f;
 }
 .prices__block:hover {
   background: #282828;
@@ -52,6 +53,7 @@
 .prices__img {
   margin: 20px 0 15px;
   height: 60px;
+  margin-top: -30px;
 }
 .prices__name {
   text-align: center;
