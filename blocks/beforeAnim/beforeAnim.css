@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.beforeAnim {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+.Beforecontainer {
+  display: grid;
+  place-content: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  --position: 50%;
+}
+.image-container {
+  max-width: 90vw;
+  max-height: 90vh;
+}
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+  display: block;
+  max-width: 100%;
+}
+.image-before {
+  position: absolute;
+  inset: 0;
+  width: var(--position);
+}
+
+.Beforeslider {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-horline {
+  position: absolute;
+  inset: 0;
+  width: 0;
+  z-index: 10;
+  height: 100%;
+  background-color: white;
+  left: var(--position);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.slider-button {
+  position: absolute;
+  background-color: #fff;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 100vw;
+  display: grid;
+  place-items: center;
+  top: 50%;
+  left: var(--position);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 100;
+  box-shadow: 1px 1px 1px hsl(0, 50%, 2%, 0.5);
+}
