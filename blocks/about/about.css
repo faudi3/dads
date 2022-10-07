@@ -7,7 +7,6 @@
 
 .about__container {
   display: flex;
-  justify-content: center;
   margin-top: 20px;
 }
 
@@ -19,11 +18,12 @@
   /*margin-right: 20px;*/
   flex: 1;
   display: flex;
-
+  align-items: center;
   padding: 5px;
 }
 .about__wrap:last-child {
   margin-left: 20px;
+  align-items: unset;
 }
 .about__wrap:hover {
   background: #282828;
@@ -91,4 +91,36 @@
 .slide1.active1 h3 {
   opacity: 0.7;
   transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media screen and (max-width: 1060px) {
+  .about__container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .about__wrap:last-child {
+    display: none;
+  }
+}
+@media screen and (max-width: 530px) {
+  .about__text {
+    font-size: 16px;
+  }
+  .about__img {
+    width: 200px;
+    height: 250px;
+  }
+  .about {
+    margin: 20px 10px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .about__text {
+    font-size: 12px;
+  }
+  .about__img {
+    width: 150px;
+    height: 200px;
+  }
 }

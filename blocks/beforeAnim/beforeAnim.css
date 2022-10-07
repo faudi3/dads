@@ -9,7 +9,8 @@
 .beforeAnim {
   display: grid;
   place-items: center;
-  min-height: 100vh;
+  max-height: 100vh;
+  margin: 20px 0;
 }
 .Beforecontainer {
   display: grid;

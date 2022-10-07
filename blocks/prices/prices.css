@@ -79,3 +79,25 @@
 .contact2:hover {
   border: 1px solid #dd916e;
 }
+@media screen and (max-width: 988px) {
+  .prices__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .prices__block {
+    margin-top: 50px;
+    width: 90%;
+    border: 1px solid red;
+  }
+  .prices {
+    margin: 30px 10px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .prices__price {
+    font-size: 22px;
+  }
+  .prices__contact {
+    font-size: 22px;
+  }
+}

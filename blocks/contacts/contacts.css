@@ -5,7 +5,7 @@
   flex: 1;
 }
 .contacts {
-  margin: 100px 20px;
+  margin: 30px 20px;
 }
 .contacts__title {
   font-size: 36px;
@@ -13,6 +13,8 @@
 }
 
 .contact__element {
+  height: 400px;
+  width: 400px;
   background: #1d1d1d;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
@@ -60,4 +62,106 @@
 }
 .contact__element:hover p {
   opacity: 1;
+}
+@media screen and (max-width: 1260px) {
+  .contact__element {
+    height: 350px;
+    width: 350px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .contact__element {
+    height: 300px;
+    width: 300px;
+  }
+  .contact__item {
+    padding: 20px;
+    font-size: 24px;
+  }
+  .contacts__contact {
+    padding: 20px;
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .contact__img {
+    height: 60px;
+    padding: 5px;
+  }
+  .contact__element {
+    height: 200px;
+    width: 200px;
+  }
+  .contact__item {
+    padding: 10px;
+    font-size: 18px;
+  }
+  .contacts__contact {
+    padding: 10px;
+    font-size: 18px;
+  }
+  .contacts__wrapper {
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .contacts__wrapper {
+    flex-direction: column;
+  }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact__element {
+    height: 400px;
+    width: 400px;
+    margin-top: 10px;
+  }
+  .contact__img {
+    height: 100px;
+  }
+  .contact__item {
+    padding: 30px;
+    font-size: 28px;
+  }
+  .contacts__contact {
+    padding: 30px;
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contact__element {
+    height: 300px;
+    width: 300px;
+  }
+  .contact__img {
+    height: 70px;
+  }
+  .contact__item {
+    padding: 20px;
+    font-size: 20px;
+  }
+  .contacts__contact {
+    padding: 20px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .contact__element {
+    height: 200px;
+    width: 200px;
+  }
+  .contact__img {
+    height: 50px;
+  }
+  .contact__item {
+    padding: 10px;
+    font-size: 16px;
+  }
+  .contacts__contact {
+    padding: 10px;
+    font-size: 16px;
+  }
 }

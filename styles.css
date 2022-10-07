@@ -38,3 +38,8 @@ a {
 .activefade {
   opacity: 1;
 }
+@media screen and (max-width: 800px) {
+  .title {
+    font-size: 32px;
+  }
+}

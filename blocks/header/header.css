@@ -1,6 +1,8 @@
 .header {
   background-color: black;
   box-sizing: border-box;
+  height: 10vh;
+  display: grid;
 }
 
 .header__wrapper {
@@ -8,8 +10,7 @@
   align-items: center;
   justify-content: space-between;
   margin: 0 30px;
-  height: 70px;
-  font-size: 24px;
+  font-size: 20px;
   box-sizing: border-box;
 }
 
@@ -30,7 +31,7 @@
   left: 0;
   content: "";
   width: 0;
-  height: 3px;
+  height: 2px;
   transition: all 0.2s linear;
 }
 .header__par:hover::after {
@@ -53,4 +54,27 @@
 
 .header__logo {
   cursor: pointer;
+  width: 48px;
+  height: 48px;
+}
+
+@media screen and (max-width: 680px) {
+  .header__wrapper {
+    font-size: 16px;
+    margin: 10px;
+  }
+  .header__par {
+    margin-left: 15px;
+  }
+  .header__logo {
+    width: 30px;
+    height: 30px;
+  }
+  .header__contact {
+    padding: 5px;
+    font-size: 16px;
+  }
+  .about_par {
+    display: none;
+  }
 }

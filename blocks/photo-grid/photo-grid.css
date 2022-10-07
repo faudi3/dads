@@ -1,5 +1,6 @@
 /*#fbe0d7*/
 .photo-grid {
+  border: 1px solid red;
 }
 .photo-grid__wrap {
   position: relative;
@@ -7,9 +8,10 @@
 .photo-grid__text {
   position: absolute;
   top: 25%;
-  left: 20%;
+  left: 18%;
   text-align: center;
   width: 70%;
+  font-family: "Playfair Display", serif;
 }
 .photo-grid__img {
   width: 100%;
@@ -19,9 +21,35 @@
 /*.photo-grid__h1,*/
 .photo-grid__h2 {
   font-size: 72px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "BenchNine", sans-serif;
   font-weight: 800;
   color: transparent;
   -webkit-background-clip: text;
   background-image: linear-gradient(to right, #7bfffd, #fff0fa);
+}
+
+@media screen and (max-width: 1070px) {
+  .photo-grid__h2 {
+    font-size: 58px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .photo-grid__h2 {
+    font-size: 44px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .photo-grid__h2 {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .photo-grid__h2 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .photo-grid__h2 {
+    font-size: 22px;
+  }
 }
