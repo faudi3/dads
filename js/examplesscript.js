@@ -65,20 +65,20 @@ function changeSlide(direction) {
         descrip[activeDesc].style.display = "block";
       }
     } else {
-      if (activeSlideIdx !== slidesCount - 1) {
+      if (activeSlideIdx !== 0) {
         slides1[activeSlideIdx].classList.remove("activeHor");
-        slides1[activeSlideIdx + 1].classList.add("activeHor");
+        slides1[activeSlideIdx - 1].classList.add("activeHor");
 
         descrip[activeDesc].style.display = "none";
-        descrip[activeDesc - 1].style.display = "block";
-        activeSlideIdx++;
-        activeDesc--;
+        descrip[activeDesc + 1].style.display = "block";
+        activeSlideIdx--;
+        activeDesc++;
       } else {
         descrip[activeDesc].style.display = "none";
         slides1[activeSlideIdx].classList.remove("activeHor");
 
-        activeSlideIdx = 0;
-        activeDesc = 9;
+        activeSlideIdx = 9;
+        activeDesc = 0;
         slides1[activeSlideIdx].classList.add("activeHor");
         descrip[activeDesc].style.display = "block";
       }
@@ -102,22 +102,20 @@ function changeSlide(direction) {
 }
 //for stopping vid
 
-// let SliderLists = document.querySelectorAll(".examples__block");
-// SliderLists.forEach((item, ind) => {
-//   let player = item.querySelector(".vid");
-//   upBtn.addEventListener("click", () => {
-//     changeSlide("up");
-//     player.contentWindow.postMessage(
-//       '{"event":"command","func":"pauseVideo","args":""}',
-//       "*"
-//     );
-//   });
-//
-//   downBtn.addEventListener("click", () => {
-//     changeSlide("down");
-//     player.contentWindow.postMessage(
-//       '{"event":"command","func":"pauseVideo","args":""}',
-//       "*"
-//     );
-//   });
-// });
+let SliderLists = document.querySelectorAll(".examples__block");
+SliderLists.forEach((item, ind) => {
+  let player = item.querySelector(".vid");
+  upBtn.addEventListener("click", () => {
+    player.contentWindow.postMessage(
+      '{"event":"command","func":"pauseVideo","args":""}',
+      "*"
+    );
+  });
+
+  downBtn.addEventListener("click", () => {
+    player.contentWindow.postMessage(
+      '{"event":"command","func":"pauseVideo","args":""}',
+      "*"
+    );
+  });
+});
