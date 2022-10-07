@@ -5,14 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-@keyframes blink {
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
+
 .beforeAnim {
   display: grid;
   place-items: center;
@@ -27,8 +20,8 @@
   --position: 50%;
 }
 .image-container {
-  max-width: 90vw;
-  max-height: 90vh;
+  max-width: 95vw;
+  max-height: 95vh;
 }
 .slide-image {
   width: 100%;
@@ -79,5 +72,4 @@
   pointer-events: none;
   z-index: 100;
   box-shadow: 1px 1px 1px hsl(0, 50%, 2%, 0.5);
-  /*animation: blink 1s linear;*/
 }

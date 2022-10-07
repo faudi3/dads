@@ -40,6 +40,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .slider-wrapper {
@@ -106,4 +107,15 @@ span {
 
 span:last-child {
   margin-right: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .examples__proj-title {
+    font-size: 24px;
+  }
+  .examples__text {
+    font-size: 14px;
+    margin: 10px;
+    padding-bottom: 10px;
+  }
 }
