@@ -8,12 +8,7 @@ const slides1 = document.querySelectorAll(".examples__block");
 let player = document.querySelector(".vid");
 let descrip = document.querySelectorAll(".sidebar div");
 
-descrip[9].style.display = "block";
-setTimeout(() => {
-  console.log(slides1);
-}, 1000);
-
-if (container.clientWidth > 1000) {
+if (container.clientWidth > 800) {
   sidebar.style.top = `-${(slidesCount - 1) * 100}vh`;
 } else {
   sidebar.style.top = 0;
@@ -39,7 +34,7 @@ downBtn.addEventListener("click", () => {
 });
 
 function changeSlide(direction) {
-  if (container.clientWidth < 1000) {
+  if (container.clientWidth < 800) {
     if (direction === "up") {
       if (activeSlideIdx !== slidesCount - 1) {
         slides1[activeSlideIdx].classList.remove("activeHor");
