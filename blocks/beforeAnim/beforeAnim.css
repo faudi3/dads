@@ -9,7 +9,6 @@
 .beforeAnim {
   display: grid;
   place-items: center;
-  max-height: 100vh;
   margin: 20px 0;
 }
 .Beforecontainer {
@@ -18,11 +17,12 @@
   position: relative;
   overflow: hidden;
   border-radius: 1rem;
+
   --position: 50%;
 }
 .image-container {
-  max-width: 95vw;
-  max-height: 95vh;
+  max-width: 97vw;
+  max-height: 97vh;
 }
 .slide-image {
   width: 100%;
