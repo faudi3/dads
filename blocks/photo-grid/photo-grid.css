@@ -1,9 +1,13 @@
 /*#fbe0d7*/
 .photo-grid {
-}
-.photo-grid__wrap {
   position: relative;
+  z-index: 3;
+  background-image: url("../../img/backgr.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
 }
+
 .photo-grid__text {
   position: absolute;
   top: 25%;
@@ -11,12 +15,6 @@
   text-align: center;
   width: 70%;
   font-family: "Playfair Display", serif;
-}
-.photo-grid__img {
-  width: 100%;
-  height: 90vh;
-  object-fit: cover;
-  opacity: 0.45;
 }
 
 /*.photo-grid__h1,*/
@@ -28,6 +26,23 @@
   -webkit-background-clip: text;
   background-image: linear-gradient(to right, #7bfffd, #fff0fa);
 }
+.photo-grid::before {
+  content: "";
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  background: #000000;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+.photo-grid:hover::before {
+  opacity: 0.3;
+}
 
 @media screen and (max-width: 1070px) {
   .photo-grid__h2 {
@@ -35,7 +50,7 @@
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 825px) {
   .photo-grid__h2 {
     font-size: 46px;
   }

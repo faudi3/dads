@@ -121,8 +121,6 @@ body {
 }
 @media screen and (max-width: 800px) {
   .container {
-    min-height: 700px;
-    max-height: 1100px;
   }
   .examples__proj-title {
     font-size: 30px;
@@ -137,7 +135,6 @@ body {
   }
   .sidebar {
     width: 100%;
-    min-height: 600px;
     position: absolute;
     display: flex;
     top: 0;
@@ -173,9 +170,12 @@ body {
   .activeHor {
     display: block;
   }
+  .slide {
+    height: auto;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .controls {
     position: relative;
     top: 40%;
@@ -186,10 +186,10 @@ body {
   }
 
   .sidebar {
-    height: 40%;
+    max-height: 40%;
   }
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 490px) {
   .container {
   }
   .examples__proj-title {
@@ -199,6 +199,7 @@ body {
     font-size: 12px;
   }
 }
+/*
 @media screen and (max-width: 420px) {
   .examples__proj-title {
     font-size: 18px;
@@ -208,3 +209,4 @@ body {
     line-height: 14px;
   }
 }
+*/

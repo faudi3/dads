@@ -79,6 +79,7 @@
 .contact2:hover {
   border: 1px solid #dd916e;
 }
+
 @media screen and (max-width: 988px) {
   .prices__wrapper {
     flex-direction: column;
