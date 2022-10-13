@@ -8,12 +8,6 @@ const slides1 = document.querySelectorAll(".examples__block");
 let player = document.querySelector(".vid");
 let descrip = document.querySelectorAll(".sidebar div");
 
-if (container.clientWidth > 800) {
-  sidebar.style.top = `-${(slidesCount - 1) * 100}vh`;
-} else {
-  sidebar.style.top = 0;
-}
-
 let activeSlideIdx = 0;
 let activeDesc = 9;
 
