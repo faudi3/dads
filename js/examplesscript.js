@@ -10,7 +10,11 @@ let descrip = document.querySelectorAll(".sidebar div");
 
 let activeSlideIdx = 0;
 let activeDesc = 9;
-
+if (container.clientWidth > 800) {
+  sidebar.style.top = `-${(slidesCount - 1) * 100}vh`;
+} else {
+  sidebar.style.top = 0;
+}
 upBtn.addEventListener("click", () => {
   changeSlide("up");
   player.contentWindow.postMessage(
